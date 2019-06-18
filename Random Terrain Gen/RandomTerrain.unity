@@ -242,8 +242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3c961bf78c30f4fa4f1852bdb7c187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 10
-  verts: 4
+  size: 8
+  verts: 8
   max_height: 2
   radius: 50
   spray_texture:
@@ -303,7 +303,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  heightmap: {fileID: 2800000, guid: 6a4b7d05f92dbab43b6656bd48e9c678, type: 3}
+  heightmap: {fileID: 0}
   algo: 0
   weight: 0.5
   number_sprays: 100
