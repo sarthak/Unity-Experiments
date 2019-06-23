@@ -6,7 +6,7 @@ Preset:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TerrainGenerator_defaults
+  m_Name: TerrainGenerator_smooth
   m_TargetType:
     m_NativeTypeID: 114
     m_ManagedTypePPtr: {fileID: 11500000, guid: c4ce6cffb564c754aad94ad6b1a2c981,
@@ -43,7 +43,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: radius
-    value: 50
+    value: 100
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: spray_texture.m_Curve.Array.size
@@ -167,7 +167,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: height_probability.m_Curve.Array.data[0].value
-    value: -0.5
+    value: -0.1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: height_probability.m_Curve.Array.data[0].inSlope
@@ -199,7 +199,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: height_probability.m_Curve.Array.data[1].value
-    value: 0.5
+    value: 0.2
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: height_probability.m_Curve.Array.data[1].inSlope
@@ -275,17 +275,17 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: current_seed.s0
-    value: 0
+    value: 654605564
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: current_seed.s1
-    value: 0
+    value: -583180875
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: current_seed.s2
-    value: 0
+    value: -1712858580
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: current_seed.s3
-    value: 0
+    value: 535772919
     objectReference: {fileID: 0}

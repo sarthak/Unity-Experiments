@@ -17,6 +17,8 @@ public class TerrainGenerator : MonoBehaviour
 	public int verts = 1;
 	[Tooltip("Max possible height/depression in terrain")]
 	public float max_height;
+	[Tooltip("Reference to water mesh")]
+	public MeshFilter water_mesh_filter;
 
 	[Header("Spray Adjustments")]
 	[Tooltip("Radius of spray tool")]
@@ -49,12 +51,16 @@ public class TerrainGenerator : MonoBehaviour
 	MeshFilter filter;
 	//Reference to mesh component
 	Mesh mesh;
+	//Reference to water's mesh component
+	Mesh water_mesh;
 
 	void Start() {
 		//initialize the setup
 		filter = GetComponent<MeshFilter>();
 		mesh = new Mesh();
+		water_mesh = new Mesh();
 		filter.mesh = mesh;
+		water_mesh_filter.mesh = water_mesh;
 		heightmap_float = new float[256, 256];
 		current_seed = Random.state;
 	}
@@ -95,14 +101,19 @@ public class TerrainGenerator : MonoBehaviour
 	void GenerateMesh() {
 		//Clear before start
 		mesh.Clear();
+		water_mesh.Clear();
 
 		//initialize
 		Vector3[] vertices = new Vector3[verts*size*verts*size];
+		Vector3[] vertices_ = new Vector3[verts*size*verts*size];
+		Vector2[] uv = new Vector2[verts*size*verts*size];
 		float delta = 1f/verts;
 		int c=0;
 
 		for (int y=0; y<verts*size; y++) {
 			for (int x=0; x<verts*size; x++) {
+				uv[c] = new Vector2(x*delta, y*delta);
+				vertices_[c] = new Vector3(x*delta, 0, y*delta);
 				vertices[c++] = new Vector3(x*delta, GetHeight(x, y), y*delta);
 			}
 		}
@@ -123,8 +134,14 @@ public class TerrainGenerator : MonoBehaviour
 		}
 
 		mesh.vertices = vertices;
+		mesh.uv = uv;
 		mesh.triangles = triangles;
 		mesh.RecalculateNormals();
+
+		water_mesh.vertices = vertices_;
+		water_mesh.uv = uv;
+		water_mesh.triangles = triangles;
+		water_mesh.RecalculateNormals();
 	}
 
 

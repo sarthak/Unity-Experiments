@@ -6,7 +6,7 @@ Preset:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TerrainGenerator_defaults
+  m_Name: TerrainGenerator_plateau
   m_TargetType:
     m_NativeTypeID: 114
     m_ManagedTypePPtr: {fileID: 11500000, guid: c4ce6cffb564c754aad94ad6b1a2c981,
@@ -43,7 +43,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: radius
-    value: 50
+    value: 60
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: spray_texture.m_Curve.Array.size
@@ -79,23 +79,23 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: spray_texture.m_Curve.Array.data[0].outWeight
-    value: 0.041066542
+    value: 0.14130563
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: spray_texture.m_Curve.Array.data[1].time
-    value: 0.24716966
+    value: 0.38503549
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: spray_texture.m_Curve.Array.data[1].value
-    value: 0.33236283
+    value: 0.1672731
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: spray_texture.m_Curve.Array.data[1].inSlope
-    value: -1.2922881
+    value: -0.68986434
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: spray_texture.m_Curve.Array.data[1].outSlope
-    value: -1.2922881
+    value: -0.68986434
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: spray_texture.m_Curve.Array.data[1].tangentMode
@@ -107,7 +107,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: spray_texture.m_Curve.Array.data[1].inWeight
-    value: 0.091232695
+    value: 0.10749025
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: spray_texture.m_Curve.Array.data[1].outWeight
@@ -167,7 +167,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: height_probability.m_Curve.Array.data[0].value
-    value: -0.5
+    value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: height_probability.m_Curve.Array.data[0].inSlope
@@ -247,11 +247,11 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: weight
-    value: 0.5
+    value: 0.7
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: number_sprays
-    value: 100
+    value: 200
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: seeded_generation
@@ -275,17 +275,17 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: current_seed.s0
-    value: 0
+    value: 654605564
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: current_seed.s1
-    value: 0
+    value: -583180875
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: current_seed.s2
-    value: 0
+    value: -1712858580
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: current_seed.s3
-    value: 0
+    value: 535772919
     objectReference: {fileID: 0}
